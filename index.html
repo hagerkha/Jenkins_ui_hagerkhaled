@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>30-Day Data Engineering Roadmap</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@300;400;500;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- SCROLL PROGRESS BAR -->
+  <div id="scroll-progress"></div>
+
+  <!-- ==================== NAVIGATION ==================== -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <div class="nav-logo">
+        <span class="logo-bracket">[</span>DE<span class="logo-accent">30</span><span class="logo-bracket">]</span>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#weeks">Weeks</a></li>
+        <li><a href="#daily">Daily Plan</a></li>
+        <li><a href="#capstone">Capstone</a></li>
+        <li><a href="#checklist">Checklist</a></li>
+        <li><a href="#interview">Interview</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ==================== HERO ==================== -->
+  <section id="hero">
+    <div class="hero-grid-bg"></div>
+    <div class="hero-scanline"></div>
+
+    <div class="hero-content">
+      <div class="hero-tag"><span class="tag-dot"></span> STRUCTURED LEARNING PATH · 2025</div>
+
+      <h1 class="hero-title">
+        <span class="title-line t1">30-Day</span>
+        <span class="title-line t2">Data Engineering</span>
+        <span class="title-line t3">Roadmap</span>
+      </h1>
+
+      <p class="hero-sub">
+        From zero to job-ready Data Engineer.<br/>
+        Structured daily lessons · Real projects · Interview-ready in 30 days.
+      </p>
+
+      <div class="hero-cta">
+        <a href="#overview" class="btn-primary">
+          <span>Start Learning</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#checklist" class="btn-ghost">View Checklist</a>
+      </div>
+
+      <!-- Animated Pipeline -->
+      <div class="pipeline-visual">
+        <div class="pip-node">
+          <div class="pip-icon">📥</div>
+          <span>Source</span>
+        </div>
+        <div class="pip-connector"><div class="pip-flow"></div></div>
+        <div class="pip-node">
+          <div class="pip-icon">⚙️</div>
+          <span>ETL</span>
+        </div>
+        <div class="pip-connector"><div class="pip-flow"></div></div>
+        <div class="pip-node">
+          <div class="pip-icon">🏔️</div>
+          <span>Lake</span>
+        </div>
+        <div class="pip-connector"><div class="pip-flow"></div></div>
+        <div class="pip-node">
+          <div class="pip-icon">🏛️</div>
+          <span>Warehouse</span>
+        </div>
+        <div class="pip-connector"><div class="pip-flow"></div></div>
+        <div class="pip-node">
+          <div class="pip-icon">📊</div>
+          <span>BI</span>
+        </div>
+      </div>
+
+      <!-- Stats -->
+      <div class="hero-stats">
+        <div class="stat-item"><div class="stat-num" data-target="30">0</div><div class="stat-lbl">Days</div></div>
+        <div class="stat-sep"></div>
+        <div class="stat-item"><div class="stat-num" data-target="4">0</div><div class="stat-lbl">Weeks</div></div>
+        <div class="stat-sep"></div>
+        <div class="stat-item"><div class="stat-num" data-target="5">0</div><div class="stat-lbl">Projects</div></div>
+        <div class="stat-sep"></div>
+        <div class="stat-item"><div class="stat-num" data-target="10">0</div><div class="stat-lbl">Tools</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== OVERVIEW ==================== -->
+  <section id="overview" class="section reveal">
+    <div class="container">
+      <div class="section-header">
+        <div class="sec-tag">// OVERVIEW</div>
+        <h2>What You'll Learn</h2>
+        <p>A battle-tested curriculum covering everything a modern Data Engineer needs to land their first role</p>
+      </div>
+      <div class="overview-grid">
+        <div class="ov-card reveal-item">
+          <div class="ov-num">01</div>
+          <div class="ov-icon">⚙️</div>
+          <h3>Core Foundations</h3>
+          <p>Linux CLI, Docker, SQL mastery, data modeling — the bedrock of every data system.</p>
+        </div>
+        <div class="ov-card reveal-item">
+          <div class="ov-num">02</div>
+          <div class="ov-icon">⚡</div>
+          <h3>Big Data &amp; Spark</h3>
+          <p>Distributed systems theory and PySpark for processing data at scale with optimization techniques.</p>
+        </div>
+        <div class="ov-card reveal-item">
+          <div class="ov-num">03</div>
+          <div class="ov-icon">🔄</div>
+          <h3>Orchestration</h3>
+          <p>Apache Airflow for scheduling, monitoring, and managing complex data pipelines in production.</p>
+        </div>
+        <div class="ov-card reveal-item">
+          <div class="ov-num">04</div>
+          <div class="ov-icon">☁️</div>
+          <h3>Cloud &amp; Warehousing</h3>
+          <p>AWS fundamentals (S3, EC2, RDS) and cloud data warehouses like Redshift and BigQuery.</p>
+        </div>
+        <div class="ov-card reveal-item">
+          <div class="ov-num">05</div>
+          <div class="ov-icon">📡</div>
+          <h3>Streaming</h3>
+          <p>Real-time data with Apache Kafka — producers, consumers, partitions, and streaming pipelines.</p>
+        </div>
+        <div class="ov-card reveal-item">
+          <div class="ov-num">06</div>
+          <div class="ov-icon">💼</div>
+          <h3>Career Ready</h3>
+          <p>Portfolio polish, mock interviews, GitHub optimization, and job application strategy.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== WEEKLY BREAKDOWN ==================== -->
+  <section id="weeks" class="section reveal">
+    <div class="container">
+      <div class="section-header">
+        <div class="sec-tag">// STRUCTURE</div>
+        <h2>4-Week Breakdown</h2>
+        <p>Each week builds on the last, creating a cumulative, solid learning path</p>
+      </div>
+
+      <div class="weeks-container">
+
+        <div class="week-block reveal-item">
+          <div class="week-header">
+            <div class="week-badge w1">WEEK 01</div>
+            <h3>Foundations &amp; Environment</h3>
+            <small>Days 1–7</small>
+          </div>
+          <ul class="week-items">
+            <li>DE Architecture, ETL vs ELT, OLTP vs OLAP</li>
+            <li>Linux Essentials &amp; Bash Scripting</li>
+            <li>Docker &amp; Containerizing PostgreSQL</li>
+            <li>Data Modeling (Star Schema, SCD)</li>
+            <li>Advanced SQL (CTEs, Window Functions)</li>
+            <li class="mini-proj-item">⚡ Mini Project: CSV → Transform → PostgreSQL</li>
+            <li>Documentation &amp; Architecture Diagrams</li>
+          </ul>
+          <div class="week-tools">
+            <span>Linux</span><span>Docker</span><span>PostgreSQL</span><span>SQL</span>
+          </div>
+        </div>
+
+        <div class="week-block reveal-item">
+          <div class="week-header">
+            <div class="week-badge w2">WEEK 02</div>
+            <h3>Spark &amp; Data Lakes</h3>
+            <small>Days 8–14</small>
+          </div>
+          <ul class="week-items">
+            <li>Distributed Systems &amp; CAP Theorem</li>
+            <li>Spark Fundamentals (RDD, DataFrames)</li>
+            <li>Spark Transformations &amp; Aggregations</li>
+            <li>Spark Optimization (Caching, Shuffle)</li>
+            <li>Data Lake Concepts &amp; Parquet Format</li>
+            <li class="mini-proj-item">⚡ Mini Project: Spark → Partitioned Parquet Pipeline</li>
+            <li>Review &amp; Documentation</li>
+          </ul>
+          <div class="week-tools">
+            <span>PySpark</span><span>Parquet</span><span>Data Lake</span><span>Python</span>
+          </div>
+        </div>
+
+        <div class="week-block reveal-item">
+          <div class="week-header">
+            <div class="week-badge w3">WEEK 03</div>
+            <h3>Orchestration &amp; Cloud</h3>
+            <small>Days 15–21</small>
+          </div>
+          <ul class="week-items">
+            <li>Apache Airflow Basics (DAGs, Operators)</li>
+            <li>Build First Airflow ETL DAG</li>
+            <li>Advanced Airflow (XCom, Retries, Sensors)</li>
+            <li>AWS Basics (S3, EC2, IAM, RDS)</li>
+            <li>Data Warehouse Concepts (Redshift/BigQuery)</li>
+            <li class="mini-proj-item">⚡ Mini Project: Cloud-based ETL Pipeline</li>
+            <li>Interview Prep &amp; SQL Practice</li>
+          </ul>
+          <div class="week-tools">
+            <span>Airflow</span><span>AWS S3</span><span>Redshift</span><span>EC2</span>
+          </div>
+        </div>
+
+        <div class="week-block reveal-item">
+          <div class="week-header">
+            <div class="week-badge w4">WEEK 04</div>
+            <h3>Streaming &amp; Capstone</h3>
+            <small>Days 22–30</small>
+          </div>
+          <ul class="week-items">
+            <li>Kafka Basics (Producers, Consumers)</li>
+            <li>Streaming Pipeline (Kafka → Spark → DB)</li>
+            <li class="mini-proj-item">🏆 Capstone (Days 24–27): E-commerce Platform</li>
+            <li>Architecture Diagram &amp; Documentation</li>
+            <li>Mock Interviews &amp; Project Explanation</li>
+            <li>GitHub Polish &amp; Job Applications</li>
+          </ul>
+          <div class="week-tools">
+            <span>Kafka</span><span>Spark Streaming</span><span>Docker</span><span>GitHub</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== DAILY ACCORDION ==================== -->
+  <section id="daily" class="section reveal">
+    <div class="container">
+      <div class="section-header">
+        <div class="sec-tag">// CURRICULUM</div>
+        <h2>Day-by-Day Plan</h2>
+        <p>Click each day to expand the detailed learning objectives and tasks</p>
+      </div>
+
+      <div class="accordion-wrapper" id="accordion">
+
+        <!-- ---- WEEK 1 ---- -->
+        <div class="acc-week-divider"><span>WEEK 01 — Foundations &amp; Environment</span></div>
+
+        <div class="acc-item">
+          <button class="acc-btn">
+            <span class="acc-day-badge">DAY 01</span>
+            <span class="acc-title">DE Architecture · ETL vs ELT · OLTP vs OLAP</span>
+            <span class="acc-chevron">›</span>
+          </button>
+          <div class="acc-content">
+            <p><strong>🎯 Goal:</strong> Understand the landscape of Data Engineering before writing any code.</p>
+            <ul>
+              <li>Data Engineering vs Data Science vs Data Analytics</li>
+              <li>ETL (Extract, Transform, Load) vs ELT patterns — when to use each</li>
+              <li>OLTP vs OLAP systems — differences in design and use case</li>
+              <li>Modern Data Stack overview (Ingestion → Storage → Transform → BI)</li>
+              <li>Draw your first data architecture diagram</li>
+            </ul>
+            <div class="acc-resources"><strong>📚 Resources:</strong> Fundamentals of Data Engineering (Reis &amp; Housley)</div>
+          </div>
+        </div>
+
+        <div class="acc-item">
+          <button class="acc-btn">
+            <span class="acc-day-badge">DAY 02</span>
+            <span class="acc-title">Linux Essentials &amp; Bash Scripting</span>
+            <span class="acc-chevron">›</span>
+          </button>
+          <div class="acc-content">
+            <p><strong>🎯 Goal:</strong> Master the command line — a daily tool for every Data Engineer.</p>
+            <ul>
+              <li>File system navigation: ls, cd, pwd, find, locate</li>
+              <li>File manipulation: cp, mv, rm, chmod, chown, ln</li>
+              <li>Piping and redirection: |, &gt;, &gt;&gt;, 2&gt;&amp;1</li>
+              <li>Text processing: grep, awk, sed, cut, sort, uniq, wc</li>
+              <li>Bash scripting: variables, loops, conditionals, functions</li>
+              <li><strong>Task:</strong> Write a bash script that processes a CSV, counts lines, extracts columns</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="acc-item">
+          <button class="acc-btn">
+            <span class="acc-day-badge">DAY 03</span>
+            <span class="acc-title">Docker Fundamentals &amp; Containerizing PostgreSQL</span>
+            <span class="acc-chevron">›</span>
+          </button>
+          <div class="acc-content">
+            <p><strong>🎯 Goal:</strong> Use Docker to create reproducible, isolated environments for your data stack.</p>
+            <ul>
+              <li>Docker concepts: Images, Containers, Volumes, Networks</li>
+              <li>Writing a Dockerfile — COPY, RUN, CMD, EXPOSE, ENV</li>
+              <li>Docker Compose for multi-service stacks</li>
+              <li>Spin up PostgreSQL + pgAdmin with Docker Compose</li>
+              <li>Persist data using named volumes</li>
+              <li><strong>Task:</strong> docker-compose.yml with PostgreSQL + seed data auto-loaded</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="acc-item">
+          <button class="acc-btn">
+            <span class="acc-day-badge">DAY 04</span>
+            <span class="acc-title">Data Modeling · Star Schema · Snowflake · SCD</span>
+            <span class="acc-chevron">›</span>
+          </button>
+          <div class="acc-content">
+            <p><strong>🎯 Goal:</strong> Design data models that are efficient for analytics queries.</p>
+            <ul>
+              <li>Normalization vs Denormalization tradeoffs</li>
+              <li>Star Schema: Fact tables vs Dimension tables</li>
+              <li>Snowflake Schema vs Star Schema — when to use each</li>
+              <li>Slowly Changing Dimensions (SCD Type 1, 2, 3)</li>
+              <li><strong>Task:</strong> Design a Star Schema for a fictional e-commerce business with 5 dimensions</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="acc-item">
+          <button class="acc-btn">
+            <span class="acc-day-badge">DAY 05</span>
+            <span class="acc-title">Advanced SQL · CTEs · Window Functions · Indexing</span>
+            <span class="acc-chevron">›</span>
+          </button>
+          <div class="acc-content">
+            <p><strong>🎯 Goal:</strong> Write SQL that impresses interviewers and solves real analytics problems.</p>
+            <ul>
+              <li>Common Table Expressions (CTEs) and recursive CTEs</li>
+              <li>Window Functions: ROW_NUMBER, RANK, DENSE_RANK, LAG, LEAD, NTILE</li>
+              <li>PARTITION BY and ORDER BY inside window functions</li>
+              <li>Indexing strategies: B-tree, Hash, Partial, Composite indexes</li>
+              <li>EXPLAIN ANALYZE for query optimization</li>
+              <li><strong>Task:</strong> Solve 10 Hard SQL problems using CTEs and window functions</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="acc-item is-project">
+          <button class="acc-btn">
+            <span class="acc-day-badge proj-badge">DAY 06</span>
+            <span class="acc-title">⚡ Mini Project — ETL Pipeline: CSV → Transform → PostgreSQL</span>
+            <span class="acc-chevron">›</span>
+          </button>
+          <div class="acc-content">
+            <p><strong>🎯 Goal:</strong> Build your first complete end-to-end ETL pipeline.</p>
+            <ul>
+              <li>Download a real dataset from Kaggle (NYC Taxi or Brazilian E-commerce)</li>
+              <li>Write Python extraction script with pandas and proper error handling</li>
+              <li>Apply data transformations: type casting, deduplication, null handling</li>
+              <li>Load into PostgreSQL using SQLAlchemy with bulk insert</li>
+              <li>Add logging (Python logging module) and idempotency</li>
+              <li>Containerize the pipeline with Docker</li>
+              <li><strong>Deliverable:</strong> GitHub repo with README, requirements.txt, docker-compose.yml</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="acc-item">
+          <button class="acc-btn">
+            <span class="acc-day-badge">DAY 07</span>
+            <span class="acc-title">Documentation &amp; Architecture Diagrams</span>
+            <span class="acc-chevron">›</span>
+          </button>
+          <div class="acc-content">
+            <p><strong>🎯 Goal:</strong> Learn to communicate technical designs clearly — a critical DE skill.</p>
+            <ul>
+              <li>Writing great technical READMEs (structure, diagrams, setup instructions)</li>
+              <li>Architecture diagram tools: draw.io, Lucidchart, Mermaid.js</li>
+              <li>Document your Week 1 mini project properly</li>
+              <li>Add architecture diagram to GitHub repo</li>
+              <li>Week 1 review and knowledge consolidation</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ---- WEEK 2 ---- -->
+        <div class="acc-week-divider"><span>WEEK 02 — Spark &amp; Data Lakes</span></div>
+
+        <div class="acc-item">
+          <button class="acc-btn">
+            <span class="acc-day-badge">DAY 08</span>
+            <span class="acc-title">Distributed Systems · CAP Theorem · Partitioning</span>
+            <span class="acc-chevron">›</span>
+          </button>
+          <div class="acc-content">
+            <p><strong>🎯 Goal:</strong> Understand why distributed systems exist and their fundamental tradeoffs.</p>
+            <ul>
+              <li>Why distribute? Horizontal vs vertical scaling</li>
+              <li>CAP Theorem: Consistency, Availability, Partition Tolerance</li>
+              <li>Data partitioning strategies: Range, Hash, List, Composite</li>
+              <li>Replication and sharding concepts</li>
+              <li>ACID vs BASE — consistency models in distributed systems</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="acc-item">
+          <button class="acc-btn">
+            <span class="acc-day-badge">DAY 09</span>
+            <span class="acc-title">Spark Fundamentals · RDD · DataFrames · Lazy Evaluation</span>
+            <span class="acc-chevron">›</span>
+          </button>
+          <div class="acc-content">
+            <p><strong>🎯 Goal:</strong> Understand Spark's architecture and why it's the backbone of big data processing.</p>
+            <ul>
+              <li>Spark architecture: Driver, Executors, Cluster Manager, DAG Scheduler</li>
+              <li>RDDs (Resilient Distributed Datasets) — the foundation</li>
+              <li>DataFrames and Datasets — higher-level APIs</li>
+              <li>Lazy evaluation: transformations vs actions</li>
+              <li>SparkSession setup and configuration</li>
+              <li><strong>Task:</strong> Load a 500MB CSV with PySpark and compare vs pandas performance</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="acc-item">
+          <button class="acc-btn">
+            <span class="acc-day-badge">DAY 10</span>
+            <span class="acc-title">Spark Transformations &amp; Aggregations</span>
+            <span class="acc-chevron">›</span>
+          </button>
+          <div class="acc-content">
+            <p><strong>🎯 Goal:</strong> Build complex data transformation logic with PySpark.</p>
+            <ul>
+              <li>DataFrame operations: select, filter, withColumn, drop, rename</li>
+              <li>Aggregations: groupBy, agg, pivot</li>
+              <li>Joins: inner, left, right, full outer, cross, semi, anti</li>
+              <li>Spark SQL — write SQL directly against DataFrames</li>
+              <li>UDFs (User Defined Functions) and their performance cost</li>
+              <li>Window functions in Spark</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="acc-item">
+          <button class="acc-btn">
+            <span class="acc-day-badge">DAY 11</span>
+            <span class="acc-title">Spark Optimization · Partitioning · Caching · Shuffle</span>
+            <span class="acc-chevron">›</span>
+          </button>
+          <div class="acc-content">
+            <p><strong>🎯 Goal:</strong> Write Spark jobs that run fast in production — a critical interview topic.</p>
+            <ul>
+              <li>Understanding Shuffle — the biggest performance killer</li>
+              <li>Partitioning: repartition() vs coalesce()</li>
+              <li>Caching and persistence: cache(), persist(), unpersist()</li>
+              <li>Broadcast joins for small tables — huge performance gain</li>
+              <li>Spark UI for job monitoring and optimization</li>
+              <li>Avoiding common pitfalls: data skew, small files problem</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="acc-item">
+          <button class="acc-btn">
+            <span class="acc-day-badge">DAY 12</span>
+            <span class="acc-title">Data Lake Concepts &amp; Parquet Format</span>
+            <span class="acc-chevron">›</span>
+          </button>
+          <div class="acc-content">
+            <p><strong>🎯 Goal:</strong> Understand data lake architecture and why Parquet is the format of choice.</p>
+            <ul>
+              <li>Data Lake vs Data Warehouse vs Data Lakehouse</li>
+              <li>Medallion Architecture: Bronze → Silver → Gold layers</li>
+              <li>Parquet format: columnar storage, schema, compression codecs</li>
+              <li>Other formats: ORC, Avro, Delta Lake — when to use each</li>
+              <li>Partitioning strategy for data lakes (date, region, category)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="acc-item is-project">
+          <button class="acc-btn">
+            <span class="acc-day-badge proj-badge">DAY 13</span>
+            <span class="acc-title">⚡ Mini Project — Spark Pipeline → Partitioned Parquet</span>
+            <span class="acc-chevron">›</span>
+          </button>
+          <div class="acc-content">
+            <p><strong>🎯 Goal:</strong> Build a production-style Spark data processing pipeline.</p>
+            <ul>
+              <li>Read raw data from multiple CSV files in a folder structure</li>
+              <li>Apply cleaning, type casting, null handling transformations</li>
+              <li>Compute aggregations: daily totals, moving averages, rankings</li>
+              <li>Write output as partitioned Parquet (year/month/day)</li>
+              <li>Add data validation step with row count assertions</li>
+              <li><strong>Deliverable:</strong> PySpark script + Dockerfile + README with architecture diagram</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="acc-item">
+          <button class="acc-btn">
+            <span class="acc-day-badge">DAY 14</span>
+            <span class="acc-title">Week 2 Review &amp; Documentation</span>
+            <span class="acc-chevron">›</span>
+          </button>
+          <div class="acc-content">
+            <p><strong>🎯 Goal:</strong> Consolidate Week 2 knowledge and document your Spark project.</p>
+            <ul>
+              <li>Review Spark core concepts — fill any knowledge gaps</li>
+              <li>Write comprehensive README for your Spark project</li>
+              <li>Add architecture diagram showing data flow</li>
+              <li>Push to GitHub with clean, descriptive commit history</li>
+              <li>Prepare 3 interview questions about Spark you could be asked</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ---- WEEK 3 ---- -->
+        <div class="acc-week-divider"><span>WEEK 03 — Orchestration &amp; Cloud</span></div>
+
+        <div class="acc-item">
+          <button class="acc-btn">
+            <span class="acc-day-badge">DAY 15</span>
+            <span class="acc-title">Apache Airflow Basics · DAGs · Operators</span>
+            <span class="acc-chevron">›</span>
+          </button>
+          <div class="acc-content">
+            <p><strong>🎯 Goal:</strong> Set up Airflow and understand how to model workflows as DAGs.</p>
+            <ul>
+              <li>Airflow architecture: Scheduler, Webserver, Executor, Metadata DB, Workers</li>
+              <li>DAG (Directed Acyclic Graph) concepts and structure</li>
+              <li>Core operators: BashOperator, PythonOperator, EmailOperator</li>
+              <li>Sensors: FileSensor, HttpSensor, S3KeySensor</li>
+              <li>Setting up Airflow with Docker Compose</li>
+              <li>DAG parameters: schedule_interval, start_date, retries, catchup</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="acc-item">
+          <button class="acc-btn">
+            <span class="acc-day-badge">DAY 16</span>
+            <span class="acc-title">Build First Airflow DAG — ETL Pipeline</span>
+            <span class="acc-chevron">›</span>
+          </button>
+          <div class="acc-content">
+            <p><strong>🎯 Goal:</strong> Automate your Week 1 ETL pipeline using Airflow.</p>
+            <ul>
+              <li>Create a DAG that runs the CSV → PostgreSQL pipeline daily</li>
+              <li>Add task dependencies with &gt;&gt; operator</li>
+              <li>Handle task failures with on_failure_callback</li>
+              <li>Monitor execution in the Airflow UI (Graph view, Tree view)</li>
+              <li>Add a data quality check task using SQLCheckOperator</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="acc-item">
+          <button class="acc-btn">
+            <span class="acc-day-badge">DAY 17</span>
+            <span class="acc-title">Advanced Airflow · XCom · Retries · Sensors</span>
+            <span class="acc-chevron">›</span>
+          </button>
+          <div class="acc-content">
+            <p><strong>🎯 Goal:</strong> Master advanced Airflow patterns used in production systems.</p>
+            <ul>
+              <li>XCom: passing data between tasks (xcom_push / xcom_pull)</li>
+              <li>TaskFlow API with @task decorator</li>
+              <li>Branching with BranchPythonOperator</li>
+              <li>Dynamic DAG generation with variables and connections</li>
+              <li>Retry logic, retry_delay, and exponential backoff</li>
+              <li>Connections &amp; Hooks for external system integration</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="acc-item">
+          <button class="acc-btn">
+            <span class="acc-day-badge">DAY 18</span>
+            <span class="acc-title">AWS Basics · S3 · EC2 · IAM · RDS</span>
+            <span class="acc-chevron">›</span>
+          </button>
+          <div class="acc-content">
+            <p><strong>🎯 Goal:</strong> Get hands-on with the AWS services every Data Engineer uses daily.</p>
+            <ul>
+              <li>S3: buckets, objects, prefixes, versioning, lifecycle policies</li>
+              <li>EC2: instances, security groups, key pairs, AMIs</li>
+              <li>IAM: users, roles, policies, least privilege principle</li>
+              <li>RDS: managed PostgreSQL, backups, parameter groups</li>
+              <li>AWS CLI and boto3 Python SDK</li>
+              <li><strong>Task:</strong> Upload processed Parquet files to S3 with boto3</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="acc-item">
+          <button class="acc-btn">
+            <span class="acc-day-badge">DAY 19</span>
+            <span class="acc-title">Data Warehouse · Redshift · BigQuery</span>
+            <span class="acc-chevron">›</span>
+          </button>
+          <div class="acc-content">
+            <p><strong>🎯 Goal:</strong> Understand cloud data warehouses and when to use them.</p>
+            <ul>
+              <li>Columnar storage: why it's faster for analytics workloads</li>
+              <li>Distribution styles: EVEN, KEY, ALL (Redshift)</li>
+              <li>Sort keys and VACUUM/ANALYZE in Redshift</li>
+              <li>BigQuery: slots, reservations, partitioning, clustering</li>
+              <li>Cost optimization strategies for cloud warehouses</li>
+              <li>COPY command for bulk loading from S3 to Redshift</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="acc-item is-project">
+          <button class="acc-btn">
+            <span class="acc-day-badge proj-badge">DAY 20</span>
+            <span class="acc-title">⚡ Mini Project — Cloud-Based ETL Pipeline</span>
+            <span class="acc-chevron">›</span>
+          </button>
+          <div class="acc-content">
+            <p><strong>🎯 Goal:</strong> Build a cloud-native pipeline that mimics real production systems.</p>
+            <ul>
+              <li>Source: Public API or dataset download</li>
+              <li>Ingest raw data to S3 (Bronze layer)</li>
+              <li>Transform with PySpark, save as Parquet to S3 (Silver layer)</li>
+              <li>Load aggregated data to Redshift/BigQuery (Gold layer)</li>
+              <li>Orchestrate entire flow with Airflow running in Docker</li>
+              <li><strong>Deliverable:</strong> Full GitHub repo with architecture diagram and setup guide</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="acc-item">
+          <button class="acc-btn">
+            <span class="acc-day-badge">DAY 21</span>
+            <span class="acc-title">Interview Prep &amp; SQL Practice</span>
+            <span class="acc-chevron">›</span>
+          </button>
+          <div class="acc-content">
+            <p><strong>🎯 Goal:</strong> Prepare for the technical portion of DE interviews.</p>
+            <ul>
+              <li>Review all concepts from Weeks 1–3</li>
+              <li>Solve 5 Hard SQL problems on LeetCode/StrataScratch</li>
+              <li>Practice explaining your projects out loud (time yourself)</li>
+              <li>Review system design patterns for data systems</li>
+              <li>Prepare answers to top 20 DE interview questions</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ---- WEEK 4 ---- -->
+        <div class="acc-week-divider"><span>WEEK 04 — Streaming &amp; Capstone</span></div>
+
+        <div class="acc-item">
+          <button class="acc-btn">
+            <span class="acc-day-badge">DAY 22</span>
+            <span class="acc-title">Kafka Basics · Producers · Consumers · Partitions</span>
+            <span class="acc-chevron">›</span>
+          </button>
+          <div class="acc-content">
+            <p><strong>🎯 Goal:</strong> Understand Kafka's architecture and build your first producer/consumer.</p>
+            <ul>
+              <li>Kafka concepts: Topics, Partitions, Offsets, Consumer Groups</li>
+              <li>Kafka architecture: Brokers, ZooKeeper/KRaft, Replication</li>
+              <li>Writing a Python Producer with confluent-kafka</li>
+              <li>Writing a Python Consumer with manual offset commit</li>
+              <li>Kafka retention policies and log compaction</li>
+              <li>Set up Kafka + Zookeeper with Docker Compose</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="acc-item">
+          <button class="acc-btn">
+            <span class="acc-day-badge">DAY 23</span>
+            <span class="acc-title">Streaming Pipeline · Kafka → Spark → Database</span>
+            <span class="acc-chevron">›</span>
+          </button>
+          <div class="acc-content">
+            <p><strong>🎯 Goal:</strong> Build a real-time streaming pipeline end-to-end.</p>
+            <ul>
+              <li>Spark Structured Streaming fundamentals</li>
+              <li>Reading from Kafka source with Spark Streaming</li>
+              <li>Stateful transformations: aggregations over time windows</li>
+              <li>Output modes: append, complete, update</li>
+              <li>Write streaming results to PostgreSQL or Redis</li>
+              <li>Monitor streaming queries with query.status</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="acc-item is-project">
+          <button class="acc-btn">
+            <span class="acc-day-badge proj-badge">DAY 24–27</span>
+            <span class="acc-title">🏆 Capstone — Full E-commerce Data Platform</span>
+            <span class="acc-chevron">›</span>
+          </button>
+          <div class="acc-content">
+            <p><strong>🎯 Goal:</strong> Build a production-grade data platform showcasing all your skills.</p>
+            <ul>
+              <li><strong>Day 24:</strong> Ingestion — Batch API + Kafka streaming for real-time order events</li>
+              <li><strong>Day 25:</strong> Storage &amp; Transform — S3 Data Lake (Bronze/Silver/Gold) + Spark jobs</li>
+              <li><strong>Day 26:</strong> Warehouse &amp; Orchestration — Star schema in Redshift + Airflow DAGs</li>
+              <li><strong>Day 27:</strong> Finalize — Dockerize everything, add monitoring, write tests</li>
+            </ul>
+            <p style="margin-top:1rem"><strong>Architecture:</strong> Kafka → Spark Streaming → Bronze S3 → Spark Batch → Silver S3 → Airflow → Gold Redshift → Dashboard</p>
+          </div>
+        </div>
+
+        <div class="acc-item">
+          <button class="acc-btn">
+            <span class="acc-day-badge">DAY 28</span>
+            <span class="acc-title">Documentation &amp; Architecture Diagram</span>
+            <span class="acc-chevron">›</span>
+          </button>
+          <div class="acc-content">
+            <p><strong>🎯 Goal:</strong> Make your capstone project portfolio-presentable.</p>
+            <ul>
+              <li>Write a comprehensive README (problem statement, architecture, setup, results)</li>
+              <li>Create a professional architecture diagram in draw.io or Lucidchart</li>
+              <li>Add screenshots of the running system and dashboards</li>
+              <li>Document key design decisions and tradeoffs</li>
+              <li>Write a LinkedIn article or blog post about your project</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="acc-item">
+          <button class="acc-btn">
+            <span class="acc-day-badge">DAY 29</span>
+            <span class="acc-title">Mock Interviews &amp; Project Explanation Practice</span>
+            <span class="acc-chevron">›</span>
+          </button>
+          <div class="acc-content">
+            <p><strong>🎯 Goal:</strong> Get comfortable articulating your projects and knowledge under pressure.</p>
+            <ul>
+              <li>Practice explaining your capstone in 2 minutes and 10 minutes</li>
+              <li>Conduct 2 full mock interviews (with peers or AI tools)</li>
+              <li>Practice whiteboard system design: "Design Twitter's data pipeline"</li>
+              <li>Behavioral questions using the STAR method</li>
+              <li>Research your target companies and tailor your answers</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="acc-item">
+          <button class="acc-btn">
+            <span class="acc-day-badge">DAY 30</span>
+            <span class="acc-title">🚀 GitHub Polish &amp; Job Applications</span>
+            <span class="acc-chevron">›</span>
+          </button>
+          <div class="acc-content">
+            <p><strong>🎯 Goal:</strong> Launch your job search with a polished, professional presence.</p>
+            <ul>
+              <li>Pin your 6 best repositories on GitHub profile</li>
+              <li>Write an outstanding GitHub Profile README</li>
+              <li>Update LinkedIn with all new skills and projects</li>
+              <li>Tailor your resume for Data Engineering roles</li>
+              <li>Apply to 10 positions today</li>
+              <li>Join DE communities: dbt Slack, Apache Airflow Slack, DE Discord</li>
+              <li>Celebrate! You earned it! 🎉</li>
+            </ul>
+          </div>
+        </div>
+
+      </div><!-- end accordion -->
+    </div>
+  </section>
+
+  <!-- ==================== CAPSTONE ==================== -->
+  <section id="capstone" class="section reveal">
+    <div class="container">
+      <div class="section-header">
+        <div class="sec-tag">// CAPSTONE</div>
+        <h2>Final Capstone Project</h2>
+        <p>A full E-commerce Data Platform demonstrating mastery of everything learned in 30 days</p>
+      </div>
+
+      <div class="capstone-arch-row">
+        <div class="arch-node"><div class="arch-icon">📨</div><span>Kafka</span><small>Event Streaming</small></div>
+        <div class="arch-arrow">→</div>
+        <div class="arch-node"><div class="arch-icon">⚡</div><span>Spark</span><small>Processing</small></div>
+        <div class="arch-arrow">→</div>
+        <div class="arch-node"><div class="arch-icon">🏔️</div><span>S3 Lake</span><small>Bronze/Silver/Gold</small></div>
+        <div class="arch-arrow">→</div>
+        <div class="arch-node"><div class="arch-icon">🏛️</div><span>Redshift</span><small>Warehouse</small></div>
+        <div class="arch-arrow">→</div>
+        <div class="arch-node"><div class="arch-icon">📊</div><span>BI</span><small>Dashboard</small></div>
+      </div>
+
+      <div class="capstone-components">
+        <div class="comp-card reveal-item">
+          <span class="comp-icon">🔄</span>
+          <div>
+            <strong>Ingestion Layer</strong>
+            <p>Batch API ingestion + Kafka streaming for real-time order events</p>
+          </div>
+        </div>
+        <div class="comp-card reveal-item">
+          <span class="comp-icon">🏔️</span>
+          <div>
+            <strong>Data Lake Storage</strong>
+            <p>S3 with medallion architecture — Parquet, partitioned by date</p>
+          </div>
+        </div>
+        <div class="comp-card reveal-item">
+          <span class="comp-icon">⚡</span>
+          <div>
+            <strong>Spark Transformations</strong>
+            <p>PySpark jobs for cleaning, enrichment, and aggregation</p>
+          </div>
+        </div>
+        <div class="comp-card reveal-item">
+          <span class="comp-icon">📊</span>
+          <div>
+            <strong>Warehouse Modeling</strong>
+            <p>Star schema: fact_orders, dim_customers, dim_products, dim_time</p>
+          </div>
+        </div>
+        <div class="comp-card reveal-item">
+          <span class="comp-icon">🔄</span>
+          <div>
+            <strong>Airflow Orchestration</strong>
+            <p>Scheduled DAGs with retry logic, sensors, and quality checks</p>
+          </div>
+        </div>
+        <div class="comp-card reveal-item">
+          <span class="comp-icon">🐳</span>
+          <div>
+            <strong>Dockerized Environment</strong>
+            <p>Full docker-compose stack: Airflow + Spark + Kafka + PostgreSQL</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SKILL CHECKLIST ==================== -->
+  <section id="checklist" class="section reveal">
+    <div class="container">
+      <div class="section-header">
+        <div class="sec-tag">// SKILLS</div>
+        <h2>Skill Checklist</h2>
+        <p>Check off skills as you master them — track your progress through the roadmap</p>
+      </div>
+
+      <div class="checklist-grid">
+        <label class="check-item"><input type="checkbox" class="check-box"/><span class="check-custom"></span><span class="check-text">Build batch and streaming pipelines end-to-end</span></label>
+        <label class="check-item"><input type="checkbox" class="check-box"/><span class="check-custom"></span><span class="check-text">Use Spark efficiently and optimize jobs</span></label>
+        <label class="check-item"><input type="checkbox" class="check-box"/><span class="check-custom"></span><span class="check-text">Design Star Schema and SCD models</span></label>
+        <label class="check-item"><input type="checkbox" class="check-box"/><span class="check-custom"></span><span class="check-text">Orchestrate workflows using Apache Airflow</span></label>
+        <label class="check-item"><input type="checkbox" class="check-box"/><span class="check-custom"></span><span class="check-text">Deploy services using Docker &amp; Docker Compose</span></label>
+        <label class="check-item"><input type="checkbox" class="check-box"/><span class="check-custom"></span><span class="check-text">Understand distributed systems and CAP theorem</span></label>
+        <label class="check-item"><input type="checkbox" class="check-box"/><span class="check-custom"></span><span class="check-text">Use AWS cloud fundamentals (S3, EC2, RDS)</span></label>
+        <label class="check-item"><input type="checkbox" class="check-box"/><span class="check-custom"></span><span class="check-text">Write advanced SQL (CTEs, window functions, indexing)</span></label>
+        <label class="check-item"><input type="checkbox" class="check-box"/><span class="check-custom"></span><span class="check-text">Process big data with PySpark at scale</span></label>
+        <label class="check-item"><input type="checkbox" class="check-box"/><span class="check-custom"></span><span class="check-text">Build Kafka producers and consumers</span></label>
+        <label class="check-item"><input type="checkbox" class="check-box"/><span class="check-custom"></span><span class="check-text">Design data lake with medallion architecture</span></label>
+        <label class="check-item"><input type="checkbox" class="check-box"/><span class="check-custom"></span><span class="check-text">Build a portfolio-worthy capstone project</span></label>
+      </div>
+
+      <div class="checklist-progress">
+        <div class="ckl-bar-label">
+          <span>Skills Completed</span>
+          <span id="ckl-count">0 / 12</span>
+        </div>
+        <div class="ckl-bar-track">
+          <div class="ckl-bar-fill" id="ckl-bar"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== INTERVIEW ==================== -->
+  <section id="interview" class="section reveal">
+    <div class="container">
+      <div class="section-header">
+        <div class="sec-tag">// INTERVIEW PREP</div>
+        <h2>Common Interview Questions</h2>
+        <p>Master these to confidently land your Data Engineering role</p>
+      </div>
+      <div class="interview-grid">
+        <div class="int-card reveal-item">
+          <div class="int-q">01</div>
+          <h4>Explain CAP Theorem</h4>
+          <p>A distributed system can guarantee at most two of: Consistency, Availability, Partition Tolerance. Systems like Kafka (AP) and PostgreSQL (CP) make different tradeoffs depending on their use case.</p>
+        </div>
+        <div class="int-card reveal-item">
+          <div class="int-q">02</div>
+          <h4>RANK vs DENSE_RANK?</h4>
+          <p>RANK() skips rank numbers after ties (1,1,3). DENSE_RANK() doesn't skip (1,1,2). ROW_NUMBER() always assigns unique sequential values regardless of ties.</p>
+        </div>
+        <div class="int-card reveal-item">
+          <div class="int-q">03</div>
+          <h4>What is Shuffle in Spark?</h4>
+          <p>Shuffle is data redistribution across executors, triggered by wide transformations (groupBy, join). It's the most expensive Spark operation — minimize it with broadcast joins and proper partitioning.</p>
+        </div>
+        <div class="int-card reveal-item">
+          <div class="int-q">04</div>
+          <h4>How does Airflow handle retries?</h4>
+          <p>Via retries and retry_delay parameters at task or DAG level. Use retry_exponential_backoff=True for exponential delay and on_failure_callback to send alerts when tasks ultimately fail.</p>
+        </div>
+        <div class="int-card reveal-item">
+          <div class="int-q">05</div>
+          <h4>Fact vs Dimension Table?</h4>
+          <p>Fact tables store measurable, quantitative events (orders, transactions) with foreign keys to dimensions. Dimension tables store descriptive attributes (customer name, product category) that provide context.</p>
+        </div>
+        <div class="int-card reveal-item">
+          <div class="int-q">06</div>
+          <h4>What is Idempotency?</h4>
+          <p>An operation that produces the same result when run multiple times. Critical for data pipelines — if a job fails and reruns, it shouldn't create duplicates. Achieve with upserts, deduplication keys, and atomic writes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PROGRESS CHECKPOINTS ==================== -->
+  <section id="checkpoints" class="section reveal">
+    <div class="container">
+      <div class="section-header">
+        <div class="sec-tag">// MILESTONES</div>
+        <h2>Progress Checkpoints</h2>
+        <p>Key milestones that validate you are on track</p>
+      </div>
+      <div class="checkpoints-row">
+        <div class="checkpoint reveal-item">
+          <div class="cp-circle"><span>Day 7</span></div>
+          <div class="cp-info">
+            <h4>Week 1 Complete</h4>
+            <p>ETL pipeline running in Docker, pushed to GitHub with README</p>
+          </div>
+        </div>
+        <div class="cp-line"></div>
+        <div class="checkpoint reveal-item">
+          <div class="cp-circle"><span>Day 14</span></div>
+          <div class="cp-info">
+            <h4>Week 2 Complete</h4>
+            <p>Spark pipeline processing real data, saving partitioned Parquet</p>
+          </div>
+        </div>
+        <div class="cp-line"></div>
+        <div class="checkpoint reveal-item">
+          <div class="cp-circle"><span>Day 21</span></div>
+          <div class="cp-info">
+            <h4>Week 3 Complete</h4>
+            <p>Cloud ETL pipeline on AWS, orchestrated by Airflow</p>
+          </div>
+        </div>
+        <div class="cp-line"></div>
+        <div class="checkpoint reveal-item">
+          <div class="cp-circle final"><span>Day 30</span></div>
+          <div class="cp-info">
+            <h4>🎉 Job Ready!</h4>
+            <p>Capstone done, GitHub polished, applications submitted</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== TEAM SECTION ==================== -->
+  <section id="team" class="section reveal">
+    <div class="container">
+      <div class="section-header">
+        <div class="sec-tag">// THE PROJECT</div>
+        <h2>Made By</h2>
+        <p>Built with precision and passion for aspiring Data Engineers everywhere</p>
+      </div>
+
+      <div class="team-grid">
+        <div class="team-card reveal-item">
+          <div class="team-avatar">
+            <span class="avatar-letter">H</span>
+          </div>
+          <div class="team-info">
+            <h3 class="team-name">Hager Khaled</h3>
+            <span class="team-badge">Data Engineer</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Supervisor -->
+      <div class="supervisor-block reveal-item">
+        <div class="supervisor-label">
+          <span class="sup-tag">// SUPERVISOR</span>
+        </div>
+        <div class="supervisor-card">
+          <div class="sup-glow"></div>
+          <div class="sup-avatar">
+            <span class="avatar-letter sup-letter">A</span>
+            <div class="sup-ring-1"></div>
+            <div class="sup-ring-2"></div>
+          </div>
+          <div class="sup-info">
+            <h3 class="sup-name">الاء</h3>
+            <span class="sup-role">بشمهندسه · Lead Supervisor &amp; Mentor</span>
+            <p class="sup-desc">
+              Guiding the team with expertise, vision, and relentless support throughout the entire journey.
+              Under her leadership, engineers become ready to build the future of data.
+            </p>
+            <div class="sup-stars">⭐⭐⭐⭐⭐</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer id="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-bracket">[</span>DE<span class="logo-accent">30</span><span class="logo-bracket">]</span>
+      </div>
+      <p class="footer-desc">Your 30-day structured path to becoming a Data Engineer. Discipline builds engineers.</p>
+      <div class="footer-nav">
+        <a href="#hero">Home</a>
+        <a href="#overview">Overview</a>
+        <a href="#daily">Daily Plan</a>
+        <a href="#capstone">Capstone</a>
+        <a href="#checklist">Checklist</a>
+        <a href="#interview">Interview</a>
+        <a href="#team">Team</a>
+      </div>
+      <div class="footer-team-line">
+        Made with ❤️ by <strong>Hager Khaled</strong>
+        <span class="footer-sep">·</span>
+        Supervised by <strong class="sup-name-footer">بشمهندسه الاء</strong>
+      </div>
+      <div class="footer-copy">
+        <span>30-Day Data Engineering Roadmap</span>
+        <span class="footer-sep">·</span>
+        <span>Built for aspiring Data Engineers worldwide</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
