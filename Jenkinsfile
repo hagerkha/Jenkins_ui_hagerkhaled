@@ -8,7 +8,7 @@ pipeline {
         DOCKER_CREDS    = 'dockerhub-credentials'
         CONTAINER_NAME  = 'hagerkhaled-website-container'
 
-        // ✅ غيرنا البورت لتجنب conflict مع Jenkins (كان 8090)
+        // ✅ بورت آمن بعيد عن Jenkins
         HOST_PORT       = '8091'
         CONTAINER_PORT  = '80'
     }
@@ -38,15 +38,24 @@ pipeline {
         stage('Push to Docker Hub') {
             steps {
                 echo '📤 رفع الـ Image على Docker Hub...'
+
                 withCredentials([usernamePassword(
                     credentialsId: "${DOCKER_CREDS}",
                     usernameVariable: 'DOCKER_USER',
                     passwordVariable: 'DOCKER_PASS'
                 )]) {
+
                     sh """
-                        echo \$DOCKER_PASS | docker login -u \$DOCKER_USER --password-stdin
+                        echo "🔐 Logging into Docker Hub..."
+
+                        # ✅ FIX: استخدام login مباشر بدون --password-stdin لتجنب timeout
+                        docker login -u \$DOCKER_USER -p \$DOCKER_PASS
+
+                        echo "📤 Pushing image..."
                         docker push ${DOCKER_IMAGE}:${BUILD_NUMBER}
                         docker push ${DOCKER_IMAGE}:latest
+
+                        echo "🚪 Logging out..."
                         docker logout
                     """
                 }
@@ -56,6 +65,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo '🚀 تشغيل الـ Container...'
+
                 sh """
                     docker stop ${CONTAINER_NAME} || true
                     docker rm   ${CONTAINER_NAME} || true
