@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        DOCKER_IMAGE   = 'hagerkha/jenkins-ui-hagerkhaled'
+        DOCKER_IMAGE = 'hagerkhaled/jenkins-ui-hagerkhaled'
         DOCKER_TAG     = "${BUILD_NUMBER}"
         DOCKER_LATEST  = 'latest'
         DOCKER_CREDS   = 'dockerhub-credentials'
